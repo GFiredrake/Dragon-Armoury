@@ -11,7 +11,7 @@
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="banner-header">
-            <img src="~/Content/Images/Dragon_Banner3.png" />
+            <img class="banner" src="~/Content/Images/Dragon_Banner2.png" />
         </div>
         <div class="container">
             
@@ -21,23 +21,28 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+               @* @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Weapons", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Armour", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Masks", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Props", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("About Us", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+
                 </ul>
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+    <div class="main-area" >
+        <div align="center" class="float-left left-area"></div>
+        <div align="center" class="float-left center-area">
+            @RenderBody()
+        </div>
+        <div align="center" class="float-left right-area"></div>
     </div>
 
     @Scripts.Render("~/bundles/jquery")

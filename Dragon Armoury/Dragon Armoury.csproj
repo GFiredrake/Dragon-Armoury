@@ -173,11 +173,15 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\Dragon_Armour.png" />
+    <Content Include="Content\Images\Dragon_Banner2.png" />
     <Content Include="Content\Images\Dragon_Banner3.png" />
     <Content Include="Content\Images\Dragon_Banner_Background.png" />
-    <Content Include="Content\Images\Dragon_Banner_Background2.png" />
-    <Content Include="Content\Images\Dragon_Banner_Background3.png" />
-    <Content Include="Content\Images\Dragon_Banner_Background4.png" />
+    <Content Include="Content\Images\Dragon_Blog.png" />
+    <Content Include="Content\Images\Dragon_Book.png" />
+    <Content Include="Content\Images\Dragon_Mask.png" />
+    <Content Include="Content\Images\Dragon_Sword_Left.png" />
+    <Content Include="Content\Images\Dragon_Sword_Right.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
