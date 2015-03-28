@@ -26,8 +26,8 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Weapons", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Armour", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Weapons", "Weapons", "Home")</li>
+                    <li>@Html.ActionLink("Armour", "Armour", "Home")</li>
                     <li>@Html.ActionLink("Masks", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Props", "Contact", "Home")</li>
                     <li>@Html.ActionLink("About Us", "About", "Home")</li>
@@ -45,8 +45,7 @@
         <div align="center" class="float-left right-area"></div>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/bootstrap")
 </body>
 </html>

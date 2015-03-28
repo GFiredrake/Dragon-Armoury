@@ -1,8 +1,4 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
-
-<div class="jumbotron">
+﻿<div class="jumbotron">
     <h1>Dragon Armoury</h1>
     <p class="lead">Dragon Armoury has been making LARP equipment for over 20 years. We aim to create the best quality weapons and armour and the most imaginative.
         We believe that anything possible. If you can imagine it, we can make it.<br />
@@ -23,7 +19,7 @@
         <h2>Need something Unique</h2>
         <img class="card-image" src="~/Content/Images/Dragon_Mask.png" />
         <p>Need something truly unique, then contact our team and we can make you your prefect larp equipment. From your imagination, to the field of battle.</p>
-        <p><a class="btn btn-default" href="">Custom enquiry &raquo;</a></p>
+        <p><a class="btn btn-default" href="mailto:Jay_cooling@yahoo.com">Custom enquiry &raquo;</a></p>
     </div>
     <div class="front-page-book col-md-4">
         <h2>Our blog</h2>
@@ -32,3 +28,7 @@
         <p><a class="btn btn-default" href="http://dragon-armoury.blogspot.co.uk/">Dragon Armoury Blog &raquo;</a></p>
     </div>
 </div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jquery")
+}

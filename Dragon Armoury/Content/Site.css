@@ -100,3 +100,17 @@ float:left;
 .first-book{
     margin-left: 3%;
 }
+
+.thumbnail-div{
+    height: 180px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.catalog-thumbnail {
+    width: 318px;
+}
+
+.tester {
+    height:100px;
+}
