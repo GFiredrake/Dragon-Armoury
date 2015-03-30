@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Dragon_Armoury.Models;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -30,22 +33,6 @@ namespace Dragon_Armoury.Controllers
             return View();
         }
 
-        public ActionResult Weapons()
-        {
-            ViewBag.Catagory = 1;
-            ViewBag.Title = "Weapons";
-            ViewBag.Message = "Dragon Armoury makes an array of high quality LARP safe weapons. So what ever your character Dragon Armoury has something for you.";
-
-            return View();
-        }
-
-        public ActionResult Armour()
-        {
-            ViewBag.Catagory = 2;
-            ViewBag.Title = "Armour";
-            ViewBag.Message = "Dragon Armoury makes an array of high quality LARP Armour. So what ever your character Dragon Armoury has something for you.";
-
-            return View();
-        }
+        
     }
 }

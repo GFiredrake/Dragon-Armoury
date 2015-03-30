@@ -12,6 +12,41 @@ namespace Dragon_Armoury.Controllers
 {
     public class CatalogController : Controller
     {
+        public ActionResult Catalog(int catalogId)
+        {
+            ViewBag.Catagory = catalogId;
+            Catagory catagory = RetriveCategoryInfo(catalogId);
+            ViewBag.Title = catagory.CatagoryName;
+            ViewBag.Message = catagory.CatagoryDescription;
+
+            return View();
+        }
+
+        public Catagory RetriveCategoryInfo(int catalogId)
+        {
+
+            Catagory catagory = new Catagory();
+
+            string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+            SqlConnection connection = new SqlConnection(connectionString);
+
+            string script = "SELECT * FROM Categories WHERE catagory_id = " + catalogId;
+
+            connection.Open();
+            SqlCommand command = new SqlCommand(script, connection);
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                catagory.CatagoryId = catalogId;
+                catagory.CatagoryName = reader["catagoryName"].ToString();
+                catagory.CatagoryDescription = reader["catagotyDescription"].ToString();
+            }
+            connection.Close();
+
+            return catagory;
+        }
+
         public string RetriveCategorySubCatergories(Catagory catagory)
         {
 

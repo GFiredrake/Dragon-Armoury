@@ -10,6 +10,8 @@ namespace Dragon_Armoury.Models
 {
     public class Catagory
     {
-        public string CatagoryId { get; set; }
+        public int CatagoryId { get; set; }
+        public string CatagoryName { get; set; }
+        public string CatagoryDescription { get; set; }
     }
 }

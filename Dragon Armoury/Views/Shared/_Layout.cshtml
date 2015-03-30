@@ -26,12 +26,14 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Weapons", "Weapons", "Home")</li>
-                    <li>@Html.ActionLink("Armour", "Armour", "Home")</li>
-                    <li>@Html.ActionLink("Masks", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Props", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Weapons", "Catalog", "Catalog", new { catalogId = 1, }, null)</li>
+                    <li>@Html.ActionLink("Armour", "Catalog", "Catalog", new { catalogId = 2, }, null)</li>
+                    <li>@Html.ActionLink("Masks", "Catalog", "Catalog", new { catalogId = 3, }, null)</li>
+                    <li>@Html.ActionLink("Props", "Catalog", "Catalog", new { catalogId = 4, }, null)</li>
                     <li>@Html.ActionLink("About Us", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+
+                    
 
                 </ul>
             </div>
