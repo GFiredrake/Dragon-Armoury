@@ -32,7 +32,5 @@ namespace Dragon_Armoury.Controllers
 
             return View();
         }
-
-        
     }
 }

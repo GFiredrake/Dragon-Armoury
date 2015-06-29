@@ -9,11 +9,14 @@ using System.Web.Security;
 namespace Dragon_Armoury.Models
 {
     [Serializable]
-    public class SubCategoryInfo
+    public class ProductInfo
     {
         public string Name { get; set; }
-        public string ImageUrl { get; set; }
         public string Description { get; set; }
-        public string Id { get; set; }
+        public string Price { get; set; }
+        public string ProductId { get; set; }
+        public string StockNumber { get; set; }
+        public string PayPalLink { get; set; }
+        public string AlwayCustom { get; set; }
     }
 }

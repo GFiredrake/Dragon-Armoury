@@ -21,15 +21,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-               @* @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Weapons", "Catalog", "Catalog", new { catalogId = 1, }, null)</li>
-                    <li>@Html.ActionLink("Armour", "Catalog", "Catalog", new { catalogId = 2, }, null)</li>
-                    <li>@Html.ActionLink("Masks", "Catalog", "Catalog", new { catalogId = 3, }, null)</li>
-                    <li>@Html.ActionLink("Props", "Catalog", "Catalog", new { catalogId = 4, }, null)</li>
+                    <li>@Html.ActionLink("Weapons", "Catalog", "Catalog", new { catagoryId = 1, }, null)</li>
+                    <li>@Html.ActionLink("Armour", "Catalog", "Catalog", new { catagoryId = 2, }, null)</li>
+                    <li>@Html.ActionLink("Masks", "Catalog", "Catalog", new { catagoryId = 3, }, null)</li>
+                    <li>@Html.ActionLink("Props", "Catalog", "Catalog", new { catagoryId = 4, }, null)</li>
                     <li>@Html.ActionLink("About Us", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
 

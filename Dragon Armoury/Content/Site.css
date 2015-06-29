@@ -114,3 +114,8 @@ float:left;
 .descriptionDiv {
     height:100px;
 }
+
+.actionButton a:hover{
+    text-decoration: none;
+}
+    
